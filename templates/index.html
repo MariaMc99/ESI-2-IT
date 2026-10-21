@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071b2b">
+  <title>SØVÆRN IT | Mission digital sikkerhed</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" data-view="briefing" aria-label="Til forsiden">
+      <span class="brand-mark"><span class="mark-cross"></span><span class="mark-dot"></span></span>
+      <span><strong>Grundlæggende <em>IT</em></strong><small>CYBER · KLAR · SIKKER</small></span>
+    </a>
+    <div class="top-status"><span class="status-dot"></span> UNDERVISNINGSMODUL <span class="status-divider">/</span> <span id="clock">KLAR TIL START</span></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Åbn menu">☰</button>
+  </header>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="side-label">MISSIONSCENTER</div>
+    <button class="nav-item active" data-view="briefing"><span class="nav-icon">⌂</span><span>Briefing</span><kbd>01</kbd></button>
+    <button class="nav-item" data-view="goals"><span class="nav-icon">◎</span><span>Læringsmål</span><kbd>02</kbd></button>
+    <button class="nav-item" data-view="fundamentals"><span class="nav-icon">◈</span><span>IT-grundviden</span><kbd>03</kbd></button>
+    <button class="nav-item" data-view="memory"><span class="nav-icon">▦</span><span>Vendespil</span><kbd>04</kbd></button>
+    <button class="nav-item" data-view="cases"><span class="nav-icon">⌁</span><span>Cyber-cases</span><kbd>05</kbd></button>
+    <div class="sidebar-bottom">
+      <div class="mini-compass">✳</div>
+      <div><strong>HOLD SAMMEN.</strong><small>TÆNK FØR DU KLIKKER.</small></div>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <section class="view active" id="view-briefing">
+      <div class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> DIGITALT BEREDSKAB · MODUL 01</div>
+          <h1>Vær klar.<br><span>Tænk sikkert.</span></h1>
+          <p class="hero-intro">Velkommen om bord. I dag træner vi de digitale færdigheder, der holder både data, udstyr og mennesker sikre.</p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" data-go="fundamentals">Start briefing <span>↗</span></button>
+            <button class="btn btn-quiet" data-go="cases">Gå til cases <span>→</span></button>
+          </div>
+          <div class="hero-footnote"><span class="tiny-check">✓</span> LÆR · SAMARBEJD · TEST DIN VIDEN</div>
+        </div>
+        <div class="radar-panel" aria-label="Dekorativ radarillustration">
+          <div class="radar-top"><span>SEKTOR 04 / NETVÆRK</span><span class="radar-live"><i></i> LIVE</span></div>
+          <div class="radar">
+            <div class="radar-ring ring-a"></div><div class="radar-ring ring-b"></div><div class="radar-ring ring-c"></div>
+            <div class="radar-cross cross-x"></div><div class="radar-cross cross-y"></div>
+            <div class="radar-sweep"></div><span class="blip blip-one"></span><span class="blip blip-two"></span><span class="blip blip-three"></span>
+            <span class="radar-center">S</span>
+          </div>
+          <div class="radar-coordinates"><span>55° 41' N</span><span>12° 34' E</span><span>SECURE CHANNEL</span></div>
+        </div>
+      </div>
+
+      <div class="section-heading"><div><div class="eyebrow">DAGENS RUTE</div><h2>Tre trin til digitalt beredskab</h2></div><span class="section-note">VÆLG DIN NÆSTE OPERATION</span></div>
+      <div class="mission-grid">
+        <button class="mission-card" data-go="fundamentals"><div class="card-top"><span class="card-number">01</span><span class="card-symbol">◈</span></div><div class="card-tag">LÆR</div><h3>Grundlæggende IT</h3><p>Få styr på netværk, data, adgangskoder og de vigtigste begreber.</p><span class="card-link">Åbn briefing <b>↗</b></span></button>
+        <button class="mission-card" data-go="memory"><div class="card-top"><span class="card-number">02</span><span class="card-symbol">▦</span></div><div class="card-tag">TRÆN</div><h3>Vendespil i hold</h3><p>Match begreber med forklaringer. Samarbejd om at få flest rigtige par.</p><span class="card-link">Klargør hold <b>↗</b></span></button>
+        <button class="mission-card" data-go="cases"><div class="card-top"><span class="card-number">03</span><span class="card-symbol">⌁</span></div><div class="card-tag">AFPRØV</div><h3>Cyber-cases</h3><p>Spot faresignaler i mails, links og digitale situationer fra hverdagen.</p><span class="card-link">Start mission <b>↗</b></span></button>
+      </div>
+      <div class="bottom-strip"><span class="strip-icon">✦</span><span><strong>HUSK:</strong> Den stærkeste firewall er ofte din egen sunde skepsis.</span><span class="strip-right">BEREDSKAB BEGYNDER MED DIG</span></div>
+    </section>
+    
+    <section class="view" id="view-goals">
+      <div class="page-head">
+        <div>
+          <div class="eyebrow">MODUL 01 / LÆRINGSMÅL</div>
+          <h1>Læringsmål<span class="title-period">.</span></h1>
+          <p>Det skal du vide, kunne og kunne anvende efter dagens mission.</p>
+        </div>
+      </div>
+    
+      <div class="goals-grid">
+        <article class="goal-card goal-knowledge">
+          <span>01 / VIDEN</span>
+          <h2>Viden</h2>
+          <p>Hvad skal du vide og forstå?</p>
+          <ul>
+            <li>Forklare grundlæggende IT-begreber som netværk, firewall og backup.</li>
+            <li>Beskrive phishing og hvorfor persondata skal beskyttes.</li>
+            <li>Genkende typiske tegn på digitale trusler.</li>
+          </ul>
+        </article>
+    
+        <article class="goal-card goal-skills">
+          <span>02 / FÆRDIGHEDER</span>
+          <h2>Færdigheder</h2>
+          <p>Hvad skal du kunne gøre?</p>
+          <ul>
+            <li>Undersøge mistænkelige mails og finde faresignaler.</li>
+            <li>Vælge en sikker handling i en digital situation.</li>
+            <li>Forklare, hvorfor et svar er sikkert eller usikkert.</li>
+          </ul>
+        </article>
+    
+        <article class="goal-card goal-competencies">
+          <span>03 / KOMPETENCER</span>
+          <h2>Kompetencer</h2>
+          <p>Hvordan bruger du din viden?</p>
+          <ul>
+            <li>Være bevidst om vigtigheden </li>
+            <li>Vurdere risici og begrunde beslutninger.</li>
+            <li>Bruge gode sikkerhedsvaner i skole og hverdag.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="view" id="view-fundamentals">
+      <div class="page-head"><div><div class="eyebrow"><span class="eyebrow-line"></span> MODUL 01 / VIDEN</div><h1>IT-grundviden<span class="title-period">.</span></h1><p>De vigtigste begreber, før vi går på mission.</p></div><div class="page-index">02 <span>/ 04</span></div></div>
+      <div class="lesson-layout">
+        <div class="lesson-list">
+          <button class="lesson-tab selected" data-lesson="0"><span>01</span><span><strong>Netværk</strong><small>Hvordan enheder taler sammen</small></span><b>↗</b></button>
+        
+          <button class="lesson-tab" data-lesson="1"><span>02</span><span><strong>Adgangskoder</strong><small>Din digitale nøgle</small></span><b>↗</b></button>
+        
+          <button class="lesson-tab" data-lesson="2"><span>03</span><span><strong>MFA / To-faktor-login</strong><small>Et ekstra lag af sikkerhed</small></span><b>↗</b></button>
+        
+          <button class="lesson-tab" data-lesson="3"><span>04</span><span><strong>Persondata</strong><small>Oplysninger, der skal beskyttes</small></span><b>↗</b></button>
+        
+          <button class="lesson-tab" data-lesson="4"><span>05</span><span><strong>Phishing</strong><small>Forsøg på digitalt bedrag</small></span><b>↗</b></button>
+        
+          <button class="lesson-tab" data-lesson="5"><span>06</span><span><strong>Backup</strong><small>En ekstra kopi, når uheldet rammer</small></span><b>↗</b></button>
+        
+          <button class="lesson-tab" data-lesson="6"><span>07</span><span><strong>Firewall</strong><small>Beskyttelse mod uønsket netværkstrafik</small></span><b>↗</b></button>
+        
+          <button class="lesson-tab" data-lesson="7"><span>08</span><span><strong>Browser</strong><small>Dit program til internettet</small></span><b>↗</b></button>
+        
+          <button class="lesson-tab" data-lesson="8"><span>09</span><span><strong>Server</strong><small>Leverer data og tjenester</small></span><b>↗</b></button>
+        
+          <button class="lesson-tab" data-lesson="9"><span>10</span><span><strong>Malware</strong><small>Skadelig software</small></span><b>↗</b></button>
+        
+          <button class="lesson-tab" data-lesson="10"><span>11</span><span><strong>Kryptering</strong><small>Beskyttelse af data mod uvedkommende</small></span><b>↗</b></button>
+        </div>
+        
+        <article class="lesson-detail" id="lessonDetail">
+          <div class="detail-overline"><span class="detail-icon">◈</span><span>FAGLIG BRIEFING</span><span class="detail-number">01 / 11</span></div>
+          <h2>Netværk</h2><p class="detail-lead">Et netværk er flere enheder, der er forbundet, så de kan kommunikere og dele information. Det kan fx være computere, mobiltelefoner og printere, der er forbundet via Wi-Fi.</p>
+          <div class="example-box"><span class="example-label">EKSEMPEL FRA HVERDAGEN</span><p>Du forbinder din mobil til hjemmets Wi-Fi for at gå på internettet. Din computer bruger det samme netværk til at printe et dokument på en trådløs printer.</p></div>
+          <div class="key-point"><span>✓</span><p><strong>Husk:</strong> Brug kun netværk, du har tillid til, og vær ekstra opmærksom på åbne Wi-Fi-netværk.</p></div>
+          <button class="btn btn-primary" data-go="memory">Træn begreberne <span>→</span></button>
+        </article>
+      </div>
+      <div class="bottom-strip"><span class="strip-icon">✦</span><span><strong>MISSION:</strong> Forklar begrebet med dine egne ord til en makker.</span><span class="strip-right">VIDEN ER BEREDSKAB</span></div>
+    </section>
+
+    <section class="view" id="view-memory">
+      <div class="page-head"><div><div class="eyebrow"><span class="eyebrow-line"></span> MODUL 02 / HOLDTRÆNING</div><h1>Vendespil<span class="title-period">.</span></h1><p>Find parrene. Få point. Lær mens I spiller.</p></div><div class="page-index">03 <span>/ 04</span></div></div>
+      <div class="game-toolbar">
+        <div class="team-select-wrap"><label for="teamSelect">AKTIVT HOLD</label><select id="teamSelect"></select></div>
+        <div class="team-management"><input id="newTeamName" type="text" placeholder="Navn på nyt hold" maxlength="28"><button class="btn btn-small" id="addTeam">+ Tilføj hold</button><button class="btn btn-small btn-outline" id="renameTeam">Omdøb</button><button class="btn btn-small btn-danger" id="removeTeam">Fjern</button></div>
+      </div>
+      <div class="scoreboard" id="scoreboard"></div>
+      <div class="game-intro"><div><span class="game-label">OPGAVE / MATCH BEGREBER</span><h2>Hvad hører sammen?</h2><p>Vend to kort. Ét begreb og én forklaring giver et par.</p></div><div class="game-controls"><span id="movesLabel">TRÆK <strong>0</strong></span><button class="btn btn-small" id="restartGame">↻ Nyt spil</button></div></div>
+      <div class="memory-grid" id="memoryGrid"></div>
+      <div class="game-feedback" id="gameFeedback" aria-live="polite">Vælg to kort for at begynde.</div>
+      <div class="bottom-strip"><span class="strip-icon">✦</span><span><strong>HOLDTAKTIK:</strong> Tal sammen, før I vælger det næste kort.</span><span class="strip-right">ÉT HOLD · ÉN MISSION</span></div>
+    </section>
+
+    <section class="view" id="view-cases">
+      <div class="page-head"><div><div class="eyebrow"><span class="eyebrow-line"></span> MODUL 03 / SITUATIONSTRÆNING</div><h1>Cyber-cases<span class="title-period">.</span></h1><p>Vurder situationen. Find faresignalerne. Træf et sikkert valg.</p></div><div class="page-index">04 <span>/ 04</span></div></div>
+      <div class="case-layout">
+        <aside class="case-sidebar"><div class="case-sidebar-head">MISSIONER <span id="caseCount">01—04</span></div><div id="caseNav"></div><div class="case-tip"><span>!</span><div><strong>Operativ huskeregel</strong><p>Stop op. Tjek afsenderen. Gå ikke ind via mistænkelige links.</p></div></div></aside>
+        <article class="case-card" id="caseCard"></article>
+      </div>
+      <div class="bottom-strip"><span class="strip-icon">✦</span><span><strong>EFTER ANALYSEN:</strong> Forklar, hvilke tegn der afslørede risikoen.</span><span class="strip-right">TÆNK FØR DU KLIKKER</span></div>
+    </section>
+    <footer class="site-footer"><span>© SØVÆRN IT · UNDERVISNINGSMODUL</span><span>BYGGET TIL LÆRING <i>●</i></span></footer>
+  </main>
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
